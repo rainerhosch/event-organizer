@@ -1,6 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+/*
+ * file name     : Home
+ * file type     : controller
+ * file packages : CodeIgniter 3
+ * author        : rizky ardiansyah
+ * date-create   : 16 November 2024
+ */
 class Home extends CI_Controller {
 
 	public function __construct()
@@ -12,8 +18,8 @@ class Home extends CI_Controller {
 	{
 		$data['title'] = 'Event Organizer';
 		$data['Page'] = 'Landing Page';
-		$event = $this->event->get_data_event()->result();
-		$data['event'] = $event;
+		// $event = $this->event->get_data_event()->result();
+		// $data['event'] = $event;
 		$this->load->view('template', $data);
 	}
 }

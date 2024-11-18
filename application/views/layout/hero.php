@@ -9,6 +9,6 @@
         <div class="text-center max-w-2xl mx-auto">
             <h2 class="text-4xl font-bold mb-4">Temukan Event Menarik Di Sekitar Kamu!</h2>
             <p class="text-lg mb-8">Bergabunglah dalam berbagai acara menarik yang diselenggarakan oleh event organizer kami.</p>
-            <a href="#events" class="bg-yellow-500 text-black py-2 px-6 rounded-full text-xl hover:bg-yellow-400">Lihat Daftar Event</a>
+            <!-- <a href="#events" class="bg-yellow-500 text-black py-2 px-6 rounded-full text-xl hover:bg-yellow-400">Lihat Daftar Event</a> -->
         </div>
     </section>

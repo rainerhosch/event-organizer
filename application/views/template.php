@@ -7,61 +7,35 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $title;?></title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <title><?= $title; ?></title>
+    <link rel="icon" href="<?= base_url() ?>assets/img/favicon-32x32.png" type="image/x-icon">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="<?= base_url() ?>assets/src/css/app.css" rel="stylesheet">
+    <link href="<?= base_url() ?>assets/src/vendor/fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-    <style>
-        .swiper-container {
-            max-width: 100%;
-            width: 100%;
-        }
-
-        .swiper-slide img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body class="bg-gray-100 font-sans">
 
     <!-- Navbar -->
-	 <?php $this->load->view('layout/header');?>
+    <?php $this->load->view('layout/header'); ?>
 
     <!-- Hero Section -->
-	<?php $this->load->view('layout/hero');?>
+    <?php $this->load->view('layout/hero'); ?>
 
     <!-- Event Slider Section -->
-	<?php $this->load->view('page/landing/event_slider');?>
+    <?php $this->load->view('page/landing/event_slider'); ?>
 
     <!-- Daftar Event -->
-	<?php $this->load->view('page/landing/event_list');?>
+    <?php $this->load->view('page/landing/event_list'); ?>
 
     <!-- Contact Section -->
-	<?php // $this->load->view('layout/footer');?>
+    <?php // $this->load->view('layout/footer'); ?>
 
     <!-- Footer -->
-	<?php $this->load->view('layout/footer');?>
-
-    <!-- Swiper JS Initialization -->
-    <script>
-        const swiper = new Swiper('.swiper-container', {
-            loop: true,
-            spaceBetween: 10,
-            slidesPerView: 1,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
-    </script>
+    <?php $this->load->view('layout/footer'); ?>
 </body>
 
 </html>
