@@ -92,7 +92,7 @@
                         <span class="sr-only">Loading...</span>
                     </div>
                     <div class="p-4 bg-white shadow-lg rounded-lg mt-4">
-                        <p class="text-black-400 text-justify">${event.description}</p>
+                        <!-- <p class="text-black-400 text-justify">${event.description}</p> -->
                         <p class="mt-2 text-black-400"><i class="fa-solid fa-location-dot"></i> ${event.venue}</p>
                         <p class="text-black-400"><i class="fa-solid fa-calendar-days"></i> ${event.event_date}</p>
                         <a href="#" class="btn mt-6 inline-block bg-yellow-300 text-white py-2 px-6 rounded-lg btn_gettiket" data-eventid="${event.event_id}" data-eventname="${event.event_name}">Get Ticket</a>

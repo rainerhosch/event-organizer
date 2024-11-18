@@ -80,8 +80,8 @@
                 <div class="p-6">
                     <h3 class="text-1xl font-semibold text-gray-800">${event.event_name}</h3>
                     <p class="font-semibold text-gray-800">${event.event_type}</p>
-                    <p class="text-gray-600 mt-2 text-justify">${event.description}</p>
-                    <a href="#" class="text-blue-600 hover:underline mt-4 inline-block">Lihat detail</a>
+                    <!-- <p class="text-gray-600 mt-2 text-justify">${event.description}</p> -->
+                    <a href="<?= base_url()?>event?detail=${event.hash_event_id}-${event.event_id}" class="text-blue-600 hover:underline mt-4 inline-block">Lihat detail</a>
                 </div>
             </div>`;
                     })

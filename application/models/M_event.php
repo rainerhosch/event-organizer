@@ -20,6 +20,14 @@ class M_event extends CI_Model
         // $this->_db_live = $this->load->database('db_live', TRUE);
     }
 
+    public function get_event_by_id($event_id)
+    {
+        $this->db->select('*');
+        $this->db->from('events');
+        $this->db->where('event_id', $event_id);
+        return $this->db->get();
+    }
+
     public function get_data_event($filter = null, $length = null, $start = null)
     {
         $this->db->select('*');

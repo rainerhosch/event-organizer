@@ -17,7 +17,7 @@ class Home extends CI_Controller {
 	public function index()
 	{
 		$data['title'] = 'Event Organizer';
-		$data['Page'] = 'Landing Page';
+		$data['page'] = 'Landing Page';
 		// $event = $this->event->get_data_event()->result();
 		// $data['event'] = $event;
 		$this->load->view('template', $data);

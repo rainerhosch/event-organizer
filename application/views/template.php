@@ -22,14 +22,18 @@ defined('BASEPATH') or exit('No direct script access allowed');
     <!-- Navbar -->
     <?php $this->load->view('layout/header'); ?>
 
-    <!-- Hero Section -->
-    <?php $this->load->view('layout/hero'); ?>
+    <?php if ($page == 'Landing Page'): ?>
+        <!-- Hero Section -->
+        <?php $this->load->view('layout/hero'); ?>
 
-    <!-- Event Slider Section -->
-    <?php $this->load->view('page/landing/event_slider'); ?>
+        <!-- Event Slider Section -->
+        <?php $this->load->view('page/landing/event_slider'); ?>
 
-    <!-- Daftar Event -->
-    <?php $this->load->view('page/landing/event_list'); ?>
+        <!-- Daftar Event -->
+        <?php $this->load->view('page/landing/event_list'); ?>
+    <?php else: ?>
+        <?php $this->load->view('page/' . $page . '/' . $content); ?>
+    <?php endif; ?>
 
     <!-- Contact Section -->
     <?php // $this->load->view('layout/footer'); ?>
